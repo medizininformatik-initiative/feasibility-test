@@ -1,0 +1,23 @@
+{
+    "exclusionCriteria": [],
+    "inclusionCriteria": [
+        {
+            "termCode": {
+                "code": "72166-2",
+                "display": "",
+                "system": "http://loinc.org"
+            },
+            "valueFilter": {
+                "selectedConcepts": [
+                    {
+                        "code": "LA18976-3",
+                        "display": "",
+                        "system": "http://loinc.org"
+                    }
+                ],
+                "type": "concept"
+            }
+        }
+    ],
+    "version": ""
+}

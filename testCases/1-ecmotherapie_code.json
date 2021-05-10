@@ -1,0 +1,13 @@
+{
+    "exclusionCriteria": [],
+    "inclusionCriteria": [
+        {
+            "termCode": {
+                "code": "233573008",
+                "display": "",
+                "system": "http://snomed.info/sct"
+            }
+        }
+    ],
+    "version": ""
+}

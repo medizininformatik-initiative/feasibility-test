@@ -1,0 +1,23 @@
+{
+    "exclusionCriteria": [],
+    "inclusionCriteria": [
+        {
+            "termCode": {
+                "code": "76689-9",
+                "display": "",
+                "system": "http://loinc.org"
+            },
+            "valueFilter": {
+                "selectedConcepts": [
+                    {
+                        "code": "female",
+                        "display": "",
+                        "system": "http://hl7.org/fhir/administrative-gender"
+                    }
+                ],
+                "type": "concept"
+            }
+        }
+    ],
+    "version": ""
+}

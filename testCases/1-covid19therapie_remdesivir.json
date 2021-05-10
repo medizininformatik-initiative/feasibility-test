@@ -1,0 +1,20 @@
+{
+    "exclusionCriteria": [],
+    "inclusionCriteria": [
+        {
+            "termCode": {
+                "code": "3QKI37EEHE",
+                "display": "",
+                "system": "http://fdasis.nlm.nih.gov"
+            }
+        },
+        {
+            "termCode": {
+                "code": "870518005",
+                "display": "",
+                "system": "http://snomed.info/sct"
+            }
+        }
+    ],
+    "version": ""
+}

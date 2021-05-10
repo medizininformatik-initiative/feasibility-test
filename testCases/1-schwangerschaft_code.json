@@ -1,0 +1,28 @@
+{
+    "exclusionCriteria": [],
+    "inclusionCriteria": [
+        {
+            "termCode": {
+                "code": "82810-3",
+                "display": "",
+                "system": "http://loinc.org"
+            },
+            "valueFilter": {
+                "selectedConcepts": [
+                    {
+                        "code": "LA15173-0",
+                        "display": "",
+                        "system": "http://loinc.org"
+                    },
+                    {
+                        "code": "77386006",
+                        "display": "",
+                        "system": "http://snomed.info/sct"
+                    }
+                ],
+                "type": "concept"
+            }
+        }
+    ],
+    "version": ""
+}

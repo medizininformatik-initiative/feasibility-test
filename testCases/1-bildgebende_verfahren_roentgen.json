@@ -1,0 +1,20 @@
+{
+    "exclusionCriteria": [],
+    "inclusionCriteria": [
+        {
+            "termCode": {
+                "code": "RG",
+                "display": "",
+                "system": "http://dicom.nema.org/resources/ontology/DCM"
+            }
+        },
+        {
+            "termCode": {
+                "code": "168537006:363704007=39607008",
+                "display": "",
+                "system": "http://snomed.info/sct"
+            }
+        }
+    ],
+    "version": ""
+}

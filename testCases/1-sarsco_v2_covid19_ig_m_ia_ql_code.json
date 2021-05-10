@@ -1,0 +1,23 @@
+{
+    "exclusionCriteria": [],
+    "inclusionCriteria": [
+        {
+            "termCode": {
+                "code": "94564-2",
+                "display": "",
+                "system": "http://loinc.org"
+            },
+            "valueFilter": {
+                "selectedConcepts": [
+                    {
+                        "code": "260373001",
+                        "display": "",
+                        "system": "http://snomed.info/sct"
+                    }
+                ],
+                "type": "concept"
+            }
+        }
+    ],
+    "version": ""
+}

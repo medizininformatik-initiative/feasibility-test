@@ -1,0 +1,22 @@
+{
+    "exclusionCriteria": [],
+    "inclusionCriteria": [
+        {
+            "termCode": {
+                "code": "30902-1",
+                "display": "",
+                "system": "http://loinc.org"
+            },
+            "valueFilter": {
+                "comparator": "eq",
+                "type": "quantity-comparator",
+                "unit": {
+                    "code": "g/L",
+                    "display": "g/L"
+                },
+                "value": 12
+            }
+        }
+    ],
+    "version": ""
+}

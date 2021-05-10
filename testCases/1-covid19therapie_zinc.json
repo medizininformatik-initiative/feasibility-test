@@ -1,0 +1,20 @@
+{
+    "exclusionCriteria": [],
+    "inclusionCriteria": [
+        {
+            "termCode": {
+                "code": "A12CB",
+                "display": "",
+                "system": "http://fhir.de/CodeSystem/dimdi/atc"
+            }
+        },
+        {
+            "termCode": {
+                "code": "764877006",
+                "display": "",
+                "system": "http://snomed.info/sct"
+            }
+        }
+    ],
+    "version": ""
+}

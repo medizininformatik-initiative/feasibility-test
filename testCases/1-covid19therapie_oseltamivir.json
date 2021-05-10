@@ -1,0 +1,20 @@
+{
+    "exclusionCriteria": [],
+    "inclusionCriteria": [
+        {
+            "termCode": {
+                "code": "J05AH02",
+                "display": "",
+                "system": "http://fhir.de/CodeSystem/dimdi/atc"
+            }
+        },
+        {
+            "termCode": {
+                "code": "386142008",
+                "display": "",
+                "system": "http://snomed.info/sct"
+            }
+        }
+    ],
+    "version": ""
+}

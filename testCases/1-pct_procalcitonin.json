@@ -1,0 +1,22 @@
+{
+    "exclusionCriteria": [],
+    "inclusionCriteria": [
+        {
+            "termCode": {
+                "code": "75241-0",
+                "display": "",
+                "system": "http://loinc.org"
+            },
+            "valueFilter": {
+                "comparator": "eq",
+                "type": "quantity-comparator",
+                "unit": {
+                    "code": "ng/mL",
+                    "display": "ng/mL"
+                },
+                "value": 123.99
+            }
+        }
+    ],
+    "version": ""
+}

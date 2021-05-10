@@ -1,0 +1,13 @@
+{
+    "exclusionCriteria": [],
+    "inclusionCriteria": [
+        {
+            "termCode": {
+                "code": "6-002.b",
+                "display": "",
+                "system": "http://fhir.de/CodeSystem/dimdi/ops"
+            }
+        }
+    ],
+    "version": ""
+}

@@ -1,0 +1,22 @@
+{
+    "exclusionCriteria": [],
+    "inclusionCriteria": [
+        {
+            "termCode": {
+                "code": "94769-7",
+                "display": "",
+                "system": "http://loinc.org"
+            },
+            "valueFilter": {
+                "comparator": "eq",
+                "type": "quantity-comparator",
+                "unit": {
+                    "code": "[IU]/mL",
+                    "display": "[IU]/mL"
+                },
+                "value": 15
+            }
+        }
+    ],
+    "version": ""
+}

@@ -1,0 +1,20 @@
+{
+    "exclusionCriteria": [],
+    "inclusionCriteria": [
+        {
+            "termCode": {
+                "code": "A41.9",
+                "display": "",
+                "system": "http://fhir.de/CodeSystem/dimdi/icd-10-gm"
+            }
+        },
+        {
+            "termCode": {
+                "code": "434156008",
+                "display": "",
+                "system": "http://snomed.info/sct"
+            }
+        }
+    ],
+    "version": ""
+}

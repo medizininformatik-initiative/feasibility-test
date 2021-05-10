@@ -1,0 +1,23 @@
+{
+    "exclusionCriteria": [],
+    "inclusionCriteria": [
+        {
+            "termCode": {
+                "code": "03",
+                "display": "",
+                "system": "https://www.netzwerk-universitaetsmedizin.de/fhir/CodeSystem/ecrf-parameter-codes"
+            },
+            "valueFilter": {
+                "selectedConcepts": [
+                    {
+                        "code": "373067005",
+                        "display": "",
+                        "system": "http://snomed.info/sct"
+                    }
+                ],
+                "type": "concept"
+            }
+        }
+    ],
+    "version": ""
+}

@@ -1,0 +1,27 @@
+{
+    "exclusionCriteria": [],
+    "inclusionCriteria": [
+        {
+            "termCode": {
+                "code": "6-00a.g",
+                "display": "",
+                "system": "http://fhir.de/CodeSystem/dimdi/ops"
+            }
+        },
+        {
+            "termCode": {
+                "code": "L04AC14",
+                "display": "",
+                "system": "http://fhir.de/CodeSystem/dimdi/atc"
+            }
+        },
+        {
+            "termCode": {
+                "code": "763522001",
+                "display": "",
+                "system": "http://snomed.info/sct"
+            }
+        }
+    ],
+    "version": ""
+}

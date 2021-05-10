@@ -1,0 +1,20 @@
+{
+    "exclusionCriteria": [],
+    "inclusionCriteria": [
+        {
+            "termCode": {
+                "code": "81839001",
+                "display": "",
+                "system": "http://snomed.info/sct"
+            }
+        },
+        {
+            "termCode": {
+                "code": "B01AE03",
+                "display": "",
+                "system": "http://fhir.de/CodeSystem/dimdi/atc"
+            }
+        }
+    ],
+    "version": ""
+}

@@ -1,0 +1,20 @@
+{
+    "exclusionCriteria": [],
+    "inclusionCriteria": [
+        {
+            "termCode": {
+                "code": "G47.3",
+                "display": "",
+                "system": "http://fhir.de/CodeSystem/dimdi/icd-10-gm"
+            }
+        },
+        {
+            "termCode": {
+                "code": "73430006",
+                "display": "",
+                "system": "http://snomed.info/sct"
+            }
+        }
+    ],
+    "version": ""
+}

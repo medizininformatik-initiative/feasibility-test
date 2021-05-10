@@ -1,0 +1,13 @@
+{
+    "exclusionCriteria": [],
+    "inclusionCriteria": [
+        {
+            "termCode": {
+                "code": "Z95.5",
+                "display": "",
+                "system": "http://fhir.de/CodeSystem/dimdi/icd-10-gm"
+            }
+        }
+    ],
+    "version": ""
+}

@@ -1,0 +1,22 @@
+{
+    "exclusionCriteria": [],
+    "inclusionCriteria": [
+        {
+            "termCode": {
+                "code": "424144002",
+                "display": "Current chronological age (observable entity)",
+                "system": "http://snomed.info/sct"
+            },
+            "valueFilter": {
+                "comparator": "eq",
+                "type": "quantity-comparator",
+                "unit": {
+                    "code": "a",
+                    "display": "years"
+                },
+                "value": 46.6
+            }
+        }
+    ],
+    "version": ""
+}

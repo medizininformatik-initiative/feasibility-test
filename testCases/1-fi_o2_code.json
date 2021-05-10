@@ -1,0 +1,38 @@
+{
+    "exclusionCriteria": [],
+    "inclusionCriteria": [
+        {
+            "termCode": {
+                "code": "3150-0",
+                "display": "",
+                "system": "http://loinc.org"
+            },
+            "valueFilter": {
+                "comparator": "eq",
+                "type": "quantity-comparator",
+                "unit": {
+                    "code": "%",
+                    "display": "%"
+                },
+                "value": 12
+            }
+        },
+        {
+            "termCode": {
+                "code": "250774007",
+                "display": "",
+                "system": "http://snomed.info/sct"
+            },
+            "valueFilter": {
+                "comparator": "eq",
+                "type": "quantity-comparator",
+                "unit": {
+                    "code": "%",
+                    "display": "%"
+                },
+                "value": 12
+            }
+        }
+    ],
+    "version": ""
+}

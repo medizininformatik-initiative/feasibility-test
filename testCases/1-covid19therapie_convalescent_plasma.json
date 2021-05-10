@@ -1,0 +1,76 @@
+{
+    "exclusionCriteria": [],
+    "inclusionCriteria": [
+        {
+            "termCode": {
+                "code": "E9743",
+                "display": "",
+                "system": "urn:oid:2.16.840.1.113883.6.18.2.6"
+            }
+        },
+        {
+            "termCode": {
+                "code": "E9744",
+                "display": "",
+                "system": "urn:oid:2.16.840.1.113883.6.18.2.6"
+            }
+        },
+        {
+            "termCode": {
+                "code": "E9745",
+                "display": "",
+                "system": "urn:oid:2.16.840.1.113883.6.18.2.6"
+            }
+        },
+        {
+            "termCode": {
+                "code": "E9746",
+                "display": "",
+                "system": "urn:oid:2.16.840.1.113883.6.18.2.6"
+            }
+        },
+        {
+            "termCode": {
+                "code": "E9747",
+                "display": "",
+                "system": "urn:oid:2.16.840.1.113883.6.18.2.6"
+            }
+        },
+        {
+            "termCode": {
+                "code": "E9748",
+                "display": "",
+                "system": "urn:oid:2.16.840.1.113883.6.18.2.6"
+            }
+        },
+        {
+            "termCode": {
+                "code": "E9749",
+                "display": "",
+                "system": "urn:oid:2.16.840.1.113883.6.18.2.6"
+            }
+        },
+        {
+            "termCode": {
+                "code": "E9750",
+                "display": "",
+                "system": "urn:oid:2.16.840.1.113883.6.18.2.6"
+            }
+        },
+        {
+            "termCode": {
+                "code": "E9752",
+                "display": "",
+                "system": "urn:oid:2.16.840.1.113883.6.18.2.6"
+            }
+        },
+        {
+            "termCode": {
+                "code": "convalescent-plasma",
+                "display": "",
+                "system": "https://www.netzwerk-universitaetsmedizin.de/fhir/CodeSystem/ecrf-parameter-codes"
+            }
+        }
+    ],
+    "version": ""
+}

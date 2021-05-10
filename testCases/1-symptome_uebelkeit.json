@@ -1,0 +1,23 @@
+{
+    "exclusionCriteria": [],
+    "inclusionCriteria": [
+        {
+            "termCode": {
+                "code": "422587007",
+                "display": "",
+                "system": "http://snomed.info/sct"
+            },
+            "valueFilter": {
+                "selectedConcepts": [
+                    {
+                        "code": "24484000",
+                        "display": "",
+                        "system": "http://snomed.info/sct"
+                    }
+                ],
+                "type": "concept"
+            }
+        }
+    ],
+    "version": ""
+}

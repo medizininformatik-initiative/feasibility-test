@@ -1,0 +1,13 @@
+{
+    "exclusionCriteria": [],
+    "inclusionCriteria": [
+        {
+            "termCode": {
+                "code": "94504-8",
+                "display": "",
+                "system": "http://loinc.org"
+            }
+        }
+    ],
+    "version": ""
+}

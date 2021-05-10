@@ -1,0 +1,20 @@
+{
+    "exclusionCriteria": [],
+    "inclusionCriteria": [
+        {
+            "termCode": {
+                "code": "D84.8",
+                "display": "",
+                "system": "http://fhir.de/CodeSystem/dimdi/icd-10-gm"
+            }
+        },
+        {
+            "termCode": {
+                "code": "396332003+414029004",
+                "display": "",
+                "system": "http://snomed.info/sct"
+            }
+        }
+    ],
+    "version": ""
+}

@@ -1,0 +1,22 @@
+{
+    "exclusionCriteria": [],
+    "inclusionCriteria": [
+        {
+            "termCode": {
+                "code": "14803-1",
+                "display": "",
+                "system": "http://loinc.org"
+            },
+            "valueFilter": {
+                "comparator": "eq",
+                "type": "quantity-comparator",
+                "unit": {
+                    "code": "U/L",
+                    "display": "U/L"
+                },
+                "value": 150
+            }
+        }
+    ],
+    "version": ""
+}

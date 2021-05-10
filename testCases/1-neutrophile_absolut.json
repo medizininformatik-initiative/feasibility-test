@@ -1,0 +1,22 @@
+{
+    "exclusionCriteria": [],
+    "inclusionCriteria": [
+        {
+            "termCode": {
+                "code": "26499-4",
+                "display": "",
+                "system": "http://loinc.org"
+            },
+            "valueFilter": {
+                "comparator": "eq",
+                "type": "quantity-comparator",
+                "unit": {
+                    "code": "10*3/uL",
+                    "display": "10*3/uL"
+                },
+                "value": 10.67
+            }
+        }
+    ],
+    "version": ""
+}

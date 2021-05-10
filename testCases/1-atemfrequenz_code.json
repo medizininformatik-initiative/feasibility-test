@@ -1,0 +1,38 @@
+{
+    "exclusionCriteria": [],
+    "inclusionCriteria": [
+        {
+            "termCode": {
+                "code": "9279-1",
+                "display": "",
+                "system": "http://loinc.org"
+            },
+            "valueFilter": {
+                "comparator": "eq",
+                "type": "quantity-comparator",
+                "unit": {
+                    "code": "/min",
+                    "display": "per minute"
+                },
+                "value": 12
+            }
+        },
+        {
+            "termCode": {
+                "code": "86290005",
+                "display": "",
+                "system": "http://snomed.info/sct"
+            },
+            "valueFilter": {
+                "comparator": "eq",
+                "type": "quantity-comparator",
+                "unit": {
+                    "code": "/min",
+                    "display": "per minute"
+                },
+                "value": 12
+            }
+        }
+    ],
+    "version": ""
+}
