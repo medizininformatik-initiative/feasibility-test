@@ -1,14 +1,20 @@
+import os
 from StructuredQuery import *
 
 mapped_term_codes = []
 
-with open("TermCodeMapping.json") as mapping_file:
+scriptDir = os.path.dirname(os.path.realpath(__file__))
+testCasesDir = os.path.join(scriptDir, "testCases")
+
+with open(os.path.join(scriptDir, "TermCodeMapping.json")) as mapping_file:
     mapping_json = json.load(mapping_file)
     for mapping in mapping_json:
         mapped_term_codes.append(TermCode(**mapping['key']))
 
 
 def generate_unit_test(bundle):
+    os.makedirs(testCasesDir, exist_ok = True)
+
     for entry in bundle["entry"]:
         resource = entry["resource"]
         resource_type = resource["resourceType"]
@@ -46,11 +52,11 @@ def generate_unit_test(bundle):
         write_sq_to_file(sq, resource)
 
 
-def write_sq_to_file(structured_query, resource, file_name=None):
+def write_sq_to_file(structured_query, resource, file_name = None):
     if file_name:
-        file = open("testCases/" + file_name + ".json", 'w')
+        file = open(os.path.join(testCasesDir, file_name + ".json"), 'w')
     else:
-        file = open("testCases/" + resource["identifier"][0]["value"].split(".")[-1] + ".json", 'w')
+        file = open(os.path.join(testCasesDir, resource["identifier"][0]["value"].split(".")[-1] + ".json"), 'w')
     file.write(structured_query.to_json())
     file.close()
 
