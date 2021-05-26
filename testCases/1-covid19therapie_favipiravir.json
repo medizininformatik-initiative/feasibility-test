@@ -7,14 +7,7 @@
                 "display": "",
                 "system": "http://fhir.de/CodeSystem/dimdi/atc"
             }
-        },
-        {
-            "termCode": {
-                "code": "favipiravir",
-                "display": "",
-                "system": "https://www.netzwerk-universitaetsmedizin.de/fhir/CodeSystem/ecrf-parameter-codes"
-            }
         }
     ],
-    "version": ""
+    "version": "http://to_be_decided.com/draft-1/schema#"
 }

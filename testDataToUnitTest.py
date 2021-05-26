@@ -1,5 +1,12 @@
 from StructuredQuery import *
 
+mapped_term_codes = []
+
+with open("TermCodeMapping.json") as mapping_file:
+    mapping_json = json.load(mapping_file)
+    for mapping in mapping_json:
+        mapped_term_codes.append(TermCode(**mapping['key']))
+
 
 def generate_unit_test(bundle):
     for entry in bundle["entry"]:
@@ -20,8 +27,10 @@ def generate_unit_test(bundle):
             sq = generate_diagnostic_report_sq(resource)
         elif resource_type == "Patient":
             sq_age = generate_age_sq(resource)
+            sq_age.version = "http://to_be_decided.com/draft-1/schema#"
             write_sq_to_file(sq_age, resource, "1-age")
             sq_ethnic_group = generate_ethnic_group_sq(resource)
+            sq_ethnic_group.version = "http://to_be_decided.com/draft-1/schema#"
             write_sq_to_file(sq_ethnic_group, resource, "1-ethnic_group")
             continue
         elif resource_type == "Organization":
@@ -33,6 +42,7 @@ def generate_unit_test(bundle):
         else:
             print(resource_type)
             continue
+        sq.version = "http://to_be_decided.com/draft-1/schema#"
         write_sq_to_file(sq, resource)
 
 
@@ -72,19 +82,17 @@ def generate_ethnic_group_sq(patient_resource):
 
 def generate_condition_sq(condition_resource):
     condition_sq = StructuredQuery()
-    for coding in condition_resource["code"]["coding"]:
-        condition_term_code = TermCode(coding["system"], coding["code"], "")
+    for coding_term_code in get_term_codes(condition_resource["code"]["coding"]):
         value_filter = None
         if "severity" in condition_resource:
             value_filter = generate_concept_filter(condition_resource["severity"])
-        condition_sq.inclusionCriteria.append(Criterion(condition_term_code, value_filter))
+        condition_sq.inclusionCriteria.append(Criterion(coding_term_code, value_filter))
     return condition_sq
 
 
 def generate_observation_sq(observation_resource):
     observation_sq = StructuredQuery()
-    for coding in observation_resource["code"]["coding"]:
-        coding_term_code = TermCode(coding["system"], coding["code"], "")
+    for coding_term_code in get_term_codes(observation_resource["code"]["coding"]):
         value_filter = ValueFilter
         if "valueCodeableConcept" in observation_resource:
             value_filter = generate_concept_filter(observation_resource["valueCodeableConcept"])
@@ -97,7 +105,7 @@ def generate_observation_sq(observation_resource):
 
 
 def generate_concept_filter(codeable_concept):
-    return ConceptFilter([TermCode(coding["system"], coding["code"], "") for coding in codeable_concept["coding"]])
+    return ConceptFilter(get_term_codes(codeable_concept["coding"]))
 
 
 def generate_comparator_filter(quantity_value):
@@ -106,31 +114,41 @@ def generate_comparator_filter(quantity_value):
 
 def generate_immunization_sq(immunization_resource):
     immunization_sq = StructuredQuery()
-    for coding in immunization_resource["vaccineCode"]["coding"]:
-        coding_term_code = TermCode(coding["system"], coding["code"], "")
+    for coding_term_code in get_term_codes(immunization_resource["vaccineCode"]["coding"]):
         immunization_sq.inclusionCriteria.append(Criterion(coding_term_code, None))
     return immunization_sq
 
 
 def generate_medication_statement_sq(medication_statement_resource):
     medication_statement_sq = StructuredQuery()
-    for coding in medication_statement_resource["medicationCodeableConcept"]["coding"]:
-        coding_term_code = TermCode(coding["system"], coding["code"], "")
+    for coding_term_code in get_term_codes(medication_statement_resource["medicationCodeableConcept"]["coding"]):
         medication_statement_sq.inclusionCriteria.append(Criterion(coding_term_code, None))
     return medication_statement_sq
 
 
 def generate_procedure_sq(procedure_resource):
     procedure_sq = StructuredQuery()
-    for coding in procedure_resource["code"]["coding"]:
-        coding_term_code = TermCode(coding["system"], coding["code"], "")
+    for coding_term_code in get_term_codes(procedure_resource["code"]["coding"]):
         procedure_sq.inclusionCriteria.append(Criterion(coding_term_code, None))
     return procedure_sq
 
 
 def generate_diagnostic_report_sq(diagnostic_report_resource):
     diagnostic_report_sq = StructuredQuery()
-    for coding in diagnostic_report_resource["code"]["coding"]:
-        coding_term_code = TermCode(coding["system"], coding["code"], "")
+    for coding_term_code in get_term_codes(diagnostic_report_resource["code"]["coding"]):
         diagnostic_report_sq.inclusionCriteria.append(Criterion(coding_term_code, None))
     return diagnostic_report_sq
+
+
+def get_term_codes(codings):
+    mapped_results = []
+    result = []
+    for coding in codings:
+        coding_term_code = TermCode(coding["system"], coding["code"], "")
+        if coding_term_code in mapped_term_codes:
+            mapped_results.append(coding_term_code)
+        result.append(coding_term_code)
+    if not mapped_results:
+        return result
+    return mapped_results
+

@@ -69,8 +69,10 @@ class ValueFilter:
 
 
 class ConceptFilter(ValueFilter):
-    def __init__(self, selected_concepts=[]):
+    def __init__(self, selected_concepts=None):
         super().__init__("concept")
+        if selected_concepts is None:
+            selected_concepts = []
         self.selectedConcepts = selected_concepts
 
 
@@ -84,6 +86,7 @@ class QuantityComparatorFilter(ValueFilter):
 
 class QuantityRangeFilter(ValueFilter):
     def __init__(self, min_value, max_value, unit: Unit):
+        super().__init__("quantity-range")
         self.minValue = min_value
         self.maxValue = max_value
         self.unit = unit
