@@ -49,7 +49,7 @@ class StructuredQuery:
     def __init__(self):
         self.version = ""
         self.inclusionCriteria = []
-        self.exclusionCriteria = []
+        self.exclusionCriteria = None
 
     def to_json(self):
         return json.dumps(self, default=lambda o: del_none(
