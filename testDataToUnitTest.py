@@ -1,6 +1,9 @@
 import os
 from StructuredQuery import *
 
+from jsonschema import validate
+
+
 mapped_term_codes = []
 
 scriptDir = os.path.dirname(os.path.realpath(__file__))
@@ -23,17 +26,15 @@ def safe_get(dictionary, *keys):
 
 def generate_unit_test(bundle):
     os.makedirs(testCasesDir, exist_ok=True)
-
     for entry in bundle["entry"]:
         resource = entry["resource"]
         resource_type = resource["resourceType"]
-        sq = StructuredQuery()
         if resource_type == "Condition":
             sq = generate_condition_sq(resource)
         elif resource_type == "Observation":
-            if (profile := safe_get(resource, "meta", "profile")[0].split("/")[-1]) == "history-of-travel":
+            if (safe_get(resource, "meta", "profile")[0].split("/")[-1]) == "history-of-travel":
                 sq = generate_history_of_travel_sq(resource)
-            elif (profile := safe_get(resource, "meta", "profile")[0].split("/")[-1]) == "sofa-score":
+            elif (safe_get(resource, "meta", "profile")[0].split("/")[-1]) == "sofa-score":
                 sq = generate_sofa_score_sq(resource)
             else:
                 sq = generate_observation_sq(resource)
@@ -63,6 +64,7 @@ def generate_unit_test(bundle):
             print(resource_type)
             continue
         if not sq:
+            print(resource_type)
             continue
         sq.version = "http://to_be_decided.com/draft-1/schema#"
         write_sq_to_file(sq, resource)
@@ -70,11 +72,16 @@ def generate_unit_test(bundle):
 
 def write_sq_to_file(structured_query, resource, file_name=None):
     if file_name:
-        file = open(os.path.join(testCasesDir, file_name + ".json"), 'w')
+        file_name = os.path.join(testCasesDir, file_name + ".json")
     else:
-        file = open(os.path.join(testCasesDir, resource["meta"]["profile"][0].split("/")[-1] + "-" +
-                                 resource["identifier"][0]["value"].split(".")[-1] + ".json"), 'w')
+        file_name = os.path.join(testCasesDir, resource["meta"]["profile"][0].split("/")[-1] + "-" +
+                                 resource["id"] + ".json")
+    # simultaneous reading and writing didnt work.
+    file = open(file_name, 'w')
     file.write(structured_query.to_json())
+    file.close()
+    file = open(file_name, 'r')
+    validate(instance=json.load(file), schema=json.load(open("json_schema_sqv2.json")))
     file.close()
 
 
@@ -86,8 +93,8 @@ def generate_age_sq(patient_resource):
                 if nested_extension["url"] == "age":
                     age_term_code = TermCode("http://snomed.info/sct", "424144002", "Current chronological age ("
                                                                                     "observable entity)")
-                    value_filter = generate_comparator_filter(nested_extension["valueAge"])
-                    age_sq.inclusionCriteria.append([Criterion(age_term_code, value_filter)])
+                    value_filter = generate_comparator_filter(nested_extension["valueQuantity"])
+                    age_sq.inclusionCriteria.append([Criterion([age_term_code], value_filter)])
                     break
     return age_sq
 
@@ -99,7 +106,7 @@ def generate_ethnic_group_sq(patient_resource):
             ethnic_group_term_code = TermCode("http://snomed.info/sct", "372148003", "Ethnic group (ethnic group)")
             value_coding = extension["valueCoding"]
             value_filter = ConceptFilter([TermCode(value_coding["system"], value_coding["code"], "")])
-            ethnic_group_sq.inclusionCriteria.append([Criterion(ethnic_group_term_code, value_filter)])
+            ethnic_group_sq.inclusionCriteria.append([Criterion([ethnic_group_term_code], value_filter)])
             break
     return ethnic_group_sq
 
@@ -116,7 +123,7 @@ def generate_condition_sq(condition_resource):
         value_filter = None
         if "severity" in condition_resource:
             value_filter = generate_concept_filter(condition_resource["severity"])
-        semantic_equivalent.append(Criterion(coding_term_code, value_filter))
+        semantic_equivalent.append(Criterion([coding_term_code], value_filter))
     condition_sq.inclusionCriteria.append(semantic_equivalent)
     return condition_sq
 
@@ -134,7 +141,7 @@ def generate_observation_sq(observation_resource):
             value_filter = generate_comparator_filter(observation_resource["valueQuantity"])
         else:
             value_filter = None
-        semantic_equivalent.append(Criterion(coding_term_code, value_filter))
+        semantic_equivalent.append(Criterion([coding_term_code], value_filter))
     observation_sq.inclusionCriteria.append(semantic_equivalent)
     return observation_sq
 
@@ -151,7 +158,7 @@ def generate_term_code_sq(coding):
     sq = StructuredQuery()
     semantic_equivalent = []
     for coding_term_code in get_term_codes(coding):
-        semantic_equivalent.append(Criterion(coding_term_code, None))
+        semantic_equivalent.append(Criterion([coding_term_code], None))
     sq.inclusionCriteria.append(semantic_equivalent)
     return sq
 
@@ -162,7 +169,7 @@ def generate_sofa_score_sq(sofa_resource):
         value_filter = ValueFilter
         if "valueInteger" in sofa_resource:
             value_filter = QuantityComparatorFilter("eq", sofa_resource["valueInteger"], None)
-        sofa_sq.inclusionCriteria.append([Criterion(coding_term_code, value_filter)])
+        sofa_sq.inclusionCriteria.append([Criterion([coding_term_code], value_filter)])
         break
     return sofa_sq
 
@@ -178,7 +185,7 @@ def generate_medication_statement_sq(medication_statement_resource):
 
 
 def generate_procedure_sq(procedure_resource):
-    return generate_term_code_sq(procedure_resource["code"]["coding"])
+    return generate_term_code_sq(procedure_resource["category"]["coding"])
 
 
 def generate_diagnostic_report_sq(diagnostic_report_resource):
@@ -196,7 +203,7 @@ def generate_history_of_travel_sq(history_of_travel_resource):
                     coding_term_code = TermCode(coding["system"], coding["code"], "Country of travel")
                     if coding_term_code == TermCode("http://loinc.org", "94651-7", ""):
                         selected_concepts.append(get_country_code(component))
-        semantic_equivalent.append(Criterion(term_code, ConceptFilter(selected_concepts)))
+        semantic_equivalent.append(Criterion([term_code], ConceptFilter(selected_concepts)))
     sq.inclusionCriteria.append(semantic_equivalent)
     return sq
 

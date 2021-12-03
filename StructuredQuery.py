@@ -92,7 +92,48 @@ class QuantityRangeFilter(ValueFilter):
         self.unit = unit
 
 
+class TimeRestriction:
+    def __init__(self, before_date=None, after_date=None):
+        self.beforDate = before_date
+        self.afterDate = after_date
+
+
+class AttributeFilter(ValueFilter):
+    def __init__(self, attribute_code: TermCode, value_type):
+        self.type = value_type
+        self.attribute_code = attribute_code
+
+
+class AttributeConceptFilter(AttributeFilter):
+    def __init__(self, attribute_code, selected_concepts=None):
+        super().__init__(attribute_code, "concept")
+        if selected_concepts is None:
+            selected_concepts = []
+        self.selectedConcepts = selected_concepts
+
+
+class AttributeQuantityComparatorFilter(AttributeFilter):
+    def __init__(self, attribute_code, comparator, value, unit: Unit):
+        super().__init__(attribute_code, "quantity-comparator")
+        self.comparator = comparator
+        self.value = value
+        self.unit = unit
+
+
+class AttributeQuantityRangeFilter(AttributeFilter):
+    def __init__(self, attribute_code, min_value, max_value, unit: Unit):
+        super().__init__(attribute_code, "quantity-range")
+        self.minValue = min_value
+        self.maxValue = max_value
+        self.unit = unit
+
+
 class Criterion:
-    def __init__(self, term_code: TermCode, value_filter: ValueFilter):
-        self.termCode = term_code
+    def __init__(self, term_codes, value_filter: ValueFilter, time_restriction: TimeRestriction = None, attribute_filter: AttributeFilter = None):
+        self.termCode = term_codes
         self.valueFilter = value_filter
+        self.timeRestriction = time_restriction
+        self.attributeFilters = attribute_filter if attribute_filter else []
+
+
+
