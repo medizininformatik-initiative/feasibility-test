@@ -130,7 +130,7 @@ class AttributeQuantityRangeFilter(AttributeFilter):
 
 class Criterion:
     def __init__(self, term_codes, value_filter: ValueFilter, time_restriction: TimeRestriction = None, attribute_filter: AttributeFilter = None):
-        self.termCode = term_codes
+        self.termCodes = term_codes
         self.valueFilter = value_filter
         self.timeRestriction = time_restriction
         self.attributeFilters = attribute_filter if attribute_filter else []

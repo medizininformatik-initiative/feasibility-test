@@ -1,4 +1,6 @@
 import os
+import uuid
+
 from StructuredQuery import *
 
 from jsonschema import validate
@@ -75,7 +77,7 @@ def write_sq_to_file(structured_query, resource, file_name=None):
         file_name = os.path.join(testCasesDir, file_name + ".json")
     else:
         file_name = os.path.join(testCasesDir, resource["meta"]["profile"][0].split("/")[-1] + "-" +
-                                 resource["id"] + ".json")
+                                 str(uuid.uuid4()) + ".json")
     # simultaneous reading and writing didnt work.
     file = open(file_name, 'w')
     file.write(structured_query.to_json())

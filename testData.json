@@ -2,7 +2,7 @@
   "resourceType": "Bundle",
   "type": "transaction",
   "entry": [ {
-    "fullUrl": "3f1a34ec-868c-2f11-0c58-266cf3937db4",
+    "fullUrl": "Patient/3f1a34ec-868c-2f11-0c58-266cf3937db4",
     "resource": {
       "resourceType": "Patient",
       "id": "3f1a34ec-868c-2f11-0c58-266cf3937db4",
@@ -8518,10 +8518,7 @@
           } ]
         },
         "system": "https://fhir.imi.uni-luebeck.de/fhir",
-        "value": "RespiratoryRate_a5a8d722-92aa-d7c7-c4d5-13d408170e18",
-        "assigner": {
-          "reference": "TODO"
-        }
+        "value": "RespiratoryRate_a5a8d722-92aa-d7c7-c4d5-13d408170e18"
       } ],
       "status": "final",
       "category": [ {
@@ -8570,10 +8567,7 @@
           } ]
         },
         "system": "https://fhir.imi.uni-luebeck.de/fhir",
-        "value": "RespiratoryRate_9088b663-74dc-1a88-930f-7e068a92c5cd",
-        "assigner": {
-          "reference": "TODO"
-        }
+        "value": "RespiratoryRate_9088b663-74dc-1a88-930f-7e068a92c5cd"
       } ],
       "status": "final",
       "category": [ {
@@ -8622,10 +8616,7 @@
           } ]
         },
         "system": "https://fhir.imi.uni-luebeck.de/fhir",
-        "value": "RespiratoryRate_94c74cd7-2446-5d92-e0d0-f2e9a4593b69",
-        "assigner": {
-          "reference": "TODO"
-        }
+        "value": "RespiratoryRate_94c74cd7-2446-5d92-e0d0-f2e9a4593b69"
       } ],
       "status": "final",
       "category": [ {
@@ -8674,10 +8665,7 @@
           } ]
         },
         "system": "https://fhir.imi.uni-luebeck.de/fhir",
-        "value": "RespiratoryRate_17772264-dfb0-a72c-e21f-0bd64655f417",
-        "assigner": {
-          "reference": "TODO"
-        }
+        "value": "RespiratoryRate_17772264-dfb0-a72c-e21f-0bd64655f417"
       } ],
       "status": "final",
       "category": [ {
@@ -8726,10 +8714,7 @@
           } ]
         },
         "system": "https://fhir.imi.uni-luebeck.de/fhir",
-        "value": "RespiratoryRate_2c7a5e16-1117-0904-a08e-74358747ce84",
-        "assigner": {
-          "reference": "TODO"
-        }
+        "value": "RespiratoryRate_2c7a5e16-1117-0904-a08e-74358747ce84"
       } ],
       "status": "final",
       "category": [ {
@@ -8778,10 +8763,7 @@
           } ]
         },
         "system": "https://fhir.imi.uni-luebeck.de/fhir",
-        "value": "RespiratoryRate_d7535699-80d8-f094-7657-966a51602b15",
-        "assigner": {
-          "reference": "TODO"
-        }
+        "value": "RespiratoryRate_d7535699-80d8-f094-7657-966a51602b15"
       } ],
       "status": "final",
       "category": [ {
@@ -8830,10 +8812,7 @@
           } ]
         },
         "system": "https://fhir.imi.uni-luebeck.de/fhir",
-        "value": "RespiratoryRate_9ff1f5e8-26af-0343-bef4-b95490e4b5ba",
-        "assigner": {
-          "reference": "TODO"
-        }
+        "value": "RespiratoryRate_9ff1f5e8-26af-0343-bef4-b95490e4b5ba"
       } ],
       "status": "final",
       "category": [ {
@@ -8882,10 +8861,7 @@
           } ]
         },
         "system": "https://fhir.imi.uni-luebeck.de/fhir",
-        "value": "RespiratoryRate_11d43792-0aaa-c86b-a5d3-eac47ec0976c",
-        "assigner": {
-          "reference": "TODO"
-        }
+        "value": "RespiratoryRate_11d43792-0aaa-c86b-a5d3-eac47ec0976c"
       } ],
       "status": "final",
       "category": [ {
@@ -8934,10 +8910,7 @@
           } ]
         },
         "system": "https://fhir.imi.uni-luebeck.de/fhir",
-        "value": "RespiratoryRate_8f1cfd15-ba82-06ad-c502-8f16115a82b2",
-        "assigner": {
-          "reference": "TODO"
-        }
+        "value": "RespiratoryRate_8f1cfd15-ba82-06ad-c502-8f16115a82b2"
       } ],
       "status": "final",
       "category": [ {
@@ -8986,10 +8959,7 @@
           } ]
         },
         "system": "https://fhir.imi.uni-luebeck.de/fhir",
-        "value": "RespiratoryRate_97a86a3f-ef97-c964-2328-be57673e370e",
-        "assigner": {
-          "reference": "TODO"
-        }
+        "value": "RespiratoryRate_97a86a3f-ef97-c964-2328-be57673e370e"
       } ],
       "status": "final",
       "category": [ {
@@ -9038,10 +9008,7 @@
           } ]
         },
         "system": "https://fhir.imi.uni-luebeck.de/fhir",
-        "value": "RespiratoryRate_3592ed6c-3858-2ac8-70dc-7c51bd89997f",
-        "assigner": {
-          "reference": "TODO"
-        }
+        "value": "RespiratoryRate_3592ed6c-3858-2ac8-70dc-7c51bd89997f"
       } ],
       "status": "final",
       "category": [ {
@@ -9090,10 +9057,7 @@
           } ]
         },
         "system": "https://fhir.imi.uni-luebeck.de/fhir",
-        "value": "RespiratoryRate_32d6c383-971d-6a72-04cd-9429440fc18b",
-        "assigner": {
-          "reference": "TODO"
-        }
+        "value": "RespiratoryRate_32d6c383-971d-6a72-04cd-9429440fc18b"
       } ],
       "status": "final",
       "category": [ {
@@ -9142,10 +9106,7 @@
           } ]
         },
         "system": "https://fhir.imi.uni-luebeck.de/fhir",
-        "value": "RespiratoryRate_15089b44-e0c4-4977-9112-911bf10bbaf5",
-        "assigner": {
-          "reference": "TODO"
-        }
+        "value": "RespiratoryRate_15089b44-e0c4-4977-9112-911bf10bbaf5"
       } ],
       "status": "final",
       "category": [ {
@@ -9194,10 +9155,7 @@
           } ]
         },
         "system": "https://fhir.imi.uni-luebeck.de/fhir",
-        "value": "RespiratoryRate_4dcbd1ea-a0fe-bf36-4a8b-e63a7e901fa8",
-        "assigner": {
-          "reference": "TODO"
-        }
+        "value": "RespiratoryRate_4dcbd1ea-a0fe-bf36-4a8b-e63a7e901fa8"
       } ],
       "status": "final",
       "category": [ {
@@ -9246,10 +9204,7 @@
           } ]
         },
         "system": "https://fhir.imi.uni-luebeck.de/fhir",
-        "value": "HeartRate_75c954da-b511-fc59-8450-e43e1effe620",
-        "assigner": {
-          "reference": "TODO"
-        }
+        "value": "HeartRate_75c954da-b511-fc59-8450-e43e1effe620"
       } ],
       "status": "final",
       "category": [ {
@@ -9298,10 +9253,7 @@
           } ]
         },
         "system": "https://fhir.imi.uni-luebeck.de/fhir",
-        "value": "HeartRate_667940c0-c290-7d9d-1607-565d4f58de1e",
-        "assigner": {
-          "reference": "TODO"
-        }
+        "value": "HeartRate_667940c0-c290-7d9d-1607-565d4f58de1e"
       } ],
       "status": "final",
       "category": [ {
@@ -9350,10 +9302,7 @@
           } ]
         },
         "system": "https://fhir.imi.uni-luebeck.de/fhir",
-        "value": "HeartRate_d190ab1c-8b22-483e-ff96-871cc0be8b09",
-        "assigner": {
-          "reference": "TODO"
-        }
+        "value": "HeartRate_d190ab1c-8b22-483e-ff96-871cc0be8b09"
       } ],
       "status": "final",
       "category": [ {
@@ -9402,10 +9351,7 @@
           } ]
         },
         "system": "https://fhir.imi.uni-luebeck.de/fhir",
-        "value": "HeartRate_07bcca5c-0aa7-63a4-dd59-9f9f9e7e43da",
-        "assigner": {
-          "reference": "TODO"
-        }
+        "value": "HeartRate_07bcca5c-0aa7-63a4-dd59-9f9f9e7e43da"
       } ],
       "status": "final",
       "category": [ {
@@ -9454,10 +9400,7 @@
           } ]
         },
         "system": "https://fhir.imi.uni-luebeck.de/fhir",
-        "value": "HeartRate_abf7b17d-2902-6b90-aa44-76bdeb8dcef9",
-        "assigner": {
-          "reference": "TODO"
-        }
+        "value": "HeartRate_abf7b17d-2902-6b90-aa44-76bdeb8dcef9"
       } ],
       "status": "final",
       "category": [ {
@@ -9506,10 +9449,7 @@
           } ]
         },
         "system": "https://fhir.imi.uni-luebeck.de/fhir",
-        "value": "HeartRate_1d5f494f-968b-93fb-1529-5ab24a44c3ee",
-        "assigner": {
-          "reference": "TODO"
-        }
+        "value": "HeartRate_1d5f494f-968b-93fb-1529-5ab24a44c3ee"
       } ],
       "status": "final",
       "category": [ {
@@ -9558,10 +9498,7 @@
           } ]
         },
         "system": "https://fhir.imi.uni-luebeck.de/fhir",
-        "value": "HeartRate_1048eee0-362b-cdc0-3bda-5c975b6ef3fb",
-        "assigner": {
-          "reference": "TODO"
-        }
+        "value": "HeartRate_1048eee0-362b-cdc0-3bda-5c975b6ef3fb"
       } ],
       "status": "final",
       "category": [ {
@@ -9610,10 +9547,7 @@
           } ]
         },
         "system": "https://fhir.imi.uni-luebeck.de/fhir",
-        "value": "HeartRate_b966664a-938c-5b89-d0a1-084f341766ce",
-        "assigner": {
-          "reference": "TODO"
-        }
+        "value": "HeartRate_b966664a-938c-5b89-d0a1-084f341766ce"
       } ],
       "status": "final",
       "category": [ {
@@ -9662,10 +9596,7 @@
           } ]
         },
         "system": "https://fhir.imi.uni-luebeck.de/fhir",
-        "value": "HeartRate_cbcbd9cb-8adc-3d85-a14a-abcdb57275a4",
-        "assigner": {
-          "reference": "TODO"
-        }
+        "value": "HeartRate_cbcbd9cb-8adc-3d85-a14a-abcdb57275a4"
       } ],
       "status": "final",
       "category": [ {
@@ -9714,10 +9645,7 @@
           } ]
         },
         "system": "https://fhir.imi.uni-luebeck.de/fhir",
-        "value": "HeartRate_b6048286-dac2-cf92-6550-406648f007ad",
-        "assigner": {
-          "reference": "TODO"
-        }
+        "value": "HeartRate_b6048286-dac2-cf92-6550-406648f007ad"
       } ],
       "status": "final",
       "category": [ {
@@ -9766,10 +9694,7 @@
           } ]
         },
         "system": "https://fhir.imi.uni-luebeck.de/fhir",
-        "value": "HeartRate_249ddbf4-b955-0814-97a0-3a5c8d009568",
-        "assigner": {
-          "reference": "TODO"
-        }
+        "value": "HeartRate_249ddbf4-b955-0814-97a0-3a5c8d009568"
       } ],
       "status": "final",
       "category": [ {
@@ -9818,10 +9743,7 @@
           } ]
         },
         "system": "https://fhir.imi.uni-luebeck.de/fhir",
-        "value": "HeartRate_16121b89-0513-6029-f45b-45814134ee0f",
-        "assigner": {
-          "reference": "TODO"
-        }
+        "value": "HeartRate_16121b89-0513-6029-f45b-45814134ee0f"
       } ],
       "status": "final",
       "category": [ {
@@ -9870,10 +9792,7 @@
           } ]
         },
         "system": "https://fhir.imi.uni-luebeck.de/fhir",
-        "value": "HeartRate_80ebaffc-3435-fd94-79af-5e77e8dab630",
-        "assigner": {
-          "reference": "TODO"
-        }
+        "value": "HeartRate_80ebaffc-3435-fd94-79af-5e77e8dab630"
       } ],
       "status": "final",
       "category": [ {
@@ -9922,10 +9841,7 @@
           } ]
         },
         "system": "https://fhir.imi.uni-luebeck.de/fhir",
-        "value": "HeartRate_ecc3ad2c-505e-abea-2068-e0657d84aaa3",
-        "assigner": {
-          "reference": "TODO"
-        }
+        "value": "HeartRate_ecc3ad2c-505e-abea-2068-e0657d84aaa3"
       } ],
       "status": "final",
       "category": [ {
@@ -9974,10 +9890,7 @@
           } ]
         },
         "system": "https://fhir.imi.uni-luebeck.de/fhir",
-        "value": "BloodPressure_c47d49c9-3c92-4ed9-eed8-de73815d7b63",
-        "assigner": {
-          "reference": "TODO"
-        }
+        "value": "BloodPressure_c47d49c9-3c92-4ed9-eed8-de73815d7b63"
       } ],
       "status": "final",
       "category": [ {
@@ -10061,10 +9974,7 @@
           } ]
         },
         "system": "https://fhir.imi.uni-luebeck.de/fhir",
-        "value": "BloodPressure_b61a11f1-3baf-2511-a281-6ab0010a38fd",
-        "assigner": {
-          "reference": "TODO"
-        }
+        "value": "BloodPressure_b61a11f1-3baf-2511-a281-6ab0010a38fd"
       } ],
       "status": "final",
       "category": [ {
@@ -10148,10 +10058,7 @@
           } ]
         },
         "system": "https://fhir.imi.uni-luebeck.de/fhir",
-        "value": "BloodPressure_e1dc8350-d658-a333-56a0-2630dd491bb0",
-        "assigner": {
-          "reference": "TODO"
-        }
+        "value": "BloodPressure_e1dc8350-d658-a333-56a0-2630dd491bb0"
       } ],
       "status": "final",
       "category": [ {
@@ -10235,10 +10142,7 @@
           } ]
         },
         "system": "https://fhir.imi.uni-luebeck.de/fhir",
-        "value": "BloodPressure_fbfe9cf0-813d-ee58-c06a-e74231ba4700",
-        "assigner": {
-          "reference": "TODO"
-        }
+        "value": "BloodPressure_fbfe9cf0-813d-ee58-c06a-e74231ba4700"
       } ],
       "status": "final",
       "category": [ {
@@ -10322,10 +10226,7 @@
           } ]
         },
         "system": "https://fhir.imi.uni-luebeck.de/fhir",
-        "value": "BloodPressure_b6ecd454-66fb-e05b-7c1f-b7c02a363536",
-        "assigner": {
-          "reference": "TODO"
-        }
+        "value": "BloodPressure_b6ecd454-66fb-e05b-7c1f-b7c02a363536"
       } ],
       "status": "final",
       "category": [ {
@@ -10409,10 +10310,7 @@
           } ]
         },
         "system": "https://fhir.imi.uni-luebeck.de/fhir",
-        "value": "BloodPressure_616bacb7-4024-f555-3aca-e6770fe23f38",
-        "assigner": {
-          "reference": "TODO"
-        }
+        "value": "BloodPressure_616bacb7-4024-f555-3aca-e6770fe23f38"
       } ],
       "status": "final",
       "category": [ {
@@ -10496,10 +10394,7 @@
           } ]
         },
         "system": "https://fhir.imi.uni-luebeck.de/fhir",
-        "value": "BloodPressure_28fffc39-68f5-8929-27b2-97eeda3371ae",
-        "assigner": {
-          "reference": "TODO"
-        }
+        "value": "BloodPressure_28fffc39-68f5-8929-27b2-97eeda3371ae"
       } ],
       "status": "final",
       "category": [ {
@@ -10583,10 +10478,7 @@
           } ]
         },
         "system": "https://fhir.imi.uni-luebeck.de/fhir",
-        "value": "BloodPressure_a21577bc-47f1-a202-859e-0ee99e64fdaf",
-        "assigner": {
-          "reference": "TODO"
-        }
+        "value": "BloodPressure_a21577bc-47f1-a202-859e-0ee99e64fdaf"
       } ],
       "status": "final",
       "category": [ {
@@ -10670,10 +10562,7 @@
           } ]
         },
         "system": "https://fhir.imi.uni-luebeck.de/fhir",
-        "value": "BloodPressure_1ca22095-088d-2fa8-eefd-8303ace3a284",
-        "assigner": {
-          "reference": "TODO"
-        }
+        "value": "BloodPressure_1ca22095-088d-2fa8-eefd-8303ace3a284"
       } ],
       "status": "final",
       "category": [ {
@@ -10757,10 +10646,7 @@
           } ]
         },
         "system": "https://fhir.imi.uni-luebeck.de/fhir",
-        "value": "BloodPressure_97cd1c0f-c0e0-5b1c-3b9f-b8b550d791d5",
-        "assigner": {
-          "reference": "TODO"
-        }
+        "value": "BloodPressure_97cd1c0f-c0e0-5b1c-3b9f-b8b550d791d5"
       } ],
       "status": "final",
       "category": [ {
@@ -10844,10 +10730,7 @@
           } ]
         },
         "system": "https://fhir.imi.uni-luebeck.de/fhir",
-        "value": "BloodPressure_4ed63d2e-aae7-bec9-7c99-0661e12403aa",
-        "assigner": {
-          "reference": "TODO"
-        }
+        "value": "BloodPressure_4ed63d2e-aae7-bec9-7c99-0661e12403aa"
       } ],
       "status": "final",
       "category": [ {
@@ -10931,10 +10814,7 @@
           } ]
         },
         "system": "https://fhir.imi.uni-luebeck.de/fhir",
-        "value": "BloodPressure_36713793-f0ca-731b-c36b-095087d8f696",
-        "assigner": {
-          "reference": "TODO"
-        }
+        "value": "BloodPressure_36713793-f0ca-731b-c36b-095087d8f696"
       } ],
       "status": "final",
       "category": [ {
@@ -11018,10 +10898,7 @@
           } ]
         },
         "system": "https://fhir.imi.uni-luebeck.de/fhir",
-        "value": "BloodPressure_ce0bf645-184b-1955-709b-666d5a7df5af",
-        "assigner": {
-          "reference": "TODO"
-        }
+        "value": "BloodPressure_ce0bf645-184b-1955-709b-666d5a7df5af"
       } ],
       "status": "final",
       "category": [ {
@@ -11105,10 +10982,7 @@
           } ]
         },
         "system": "https://fhir.imi.uni-luebeck.de/fhir",
-        "value": "BloodPressure_88548688-7ef2-3e62-1943-1fbb3c2535b0",
-        "assigner": {
-          "reference": "TODO"
-        }
+        "value": "BloodPressure_88548688-7ef2-3e62-1943-1fbb3c2535b0"
       } ],
       "status": "final",
       "category": [ {
@@ -11192,10 +11066,7 @@
           } ]
         },
         "system": "https://fhir.imi.uni-luebeck.de/fhir",
-        "value": "BodyTemperature_98571029-0e7c-62b4-e5a3-f03606849e8e",
-        "assigner": {
-          "reference": "TODO"
-        }
+        "value": "BodyTemperature_98571029-0e7c-62b4-e5a3-f03606849e8e"
       } ],
       "status": "final",
       "category": [ {
@@ -11244,10 +11115,7 @@
           } ]
         },
         "system": "https://fhir.imi.uni-luebeck.de/fhir",
-        "value": "BodyTemperature_1f6ade2f-ee86-ec5d-3f2c-3845698d82e0",
-        "assigner": {
-          "reference": "TODO"
-        }
+        "value": "BodyTemperature_1f6ade2f-ee86-ec5d-3f2c-3845698d82e0"
       } ],
       "status": "final",
       "category": [ {
@@ -11296,10 +11164,7 @@
           } ]
         },
         "system": "https://fhir.imi.uni-luebeck.de/fhir",
-        "value": "BodyTemperature_217dd48a-104f-da8c-b62c-43498806d4c6",
-        "assigner": {
-          "reference": "TODO"
-        }
+        "value": "BodyTemperature_217dd48a-104f-da8c-b62c-43498806d4c6"
       } ],
       "status": "final",
       "category": [ {
@@ -11348,10 +11213,7 @@
           } ]
         },
         "system": "https://fhir.imi.uni-luebeck.de/fhir",
-        "value": "BodyTemperature_fb6a34bb-de41-dc28-d08d-4c25eaeca76e",
-        "assigner": {
-          "reference": "TODO"
-        }
+        "value": "BodyTemperature_fb6a34bb-de41-dc28-d08d-4c25eaeca76e"
       } ],
       "status": "final",
       "category": [ {
@@ -11400,10 +11262,7 @@
           } ]
         },
         "system": "https://fhir.imi.uni-luebeck.de/fhir",
-        "value": "BodyTemperature_82978c05-a8da-9657-971e-3e921abb64c2",
-        "assigner": {
-          "reference": "TODO"
-        }
+        "value": "BodyTemperature_82978c05-a8da-9657-971e-3e921abb64c2"
       } ],
       "status": "final",
       "category": [ {
@@ -11452,10 +11311,7 @@
           } ]
         },
         "system": "https://fhir.imi.uni-luebeck.de/fhir",
-        "value": "BodyTemperature_7236fb1c-e3ae-b113-5991-eb9378457c34",
-        "assigner": {
-          "reference": "TODO"
-        }
+        "value": "BodyTemperature_7236fb1c-e3ae-b113-5991-eb9378457c34"
       } ],
       "status": "final",
       "category": [ {
@@ -11504,10 +11360,7 @@
           } ]
         },
         "system": "https://fhir.imi.uni-luebeck.de/fhir",
-        "value": "BodyTemperature_e84a2f0d-0122-aaea-2b3a-90b9802ca62c",
-        "assigner": {
-          "reference": "TODO"
-        }
+        "value": "BodyTemperature_e84a2f0d-0122-aaea-2b3a-90b9802ca62c"
       } ],
       "status": "final",
       "category": [ {
@@ -11556,10 +11409,7 @@
           } ]
         },
         "system": "https://fhir.imi.uni-luebeck.de/fhir",
-        "value": "BodyTemperature_7b0e3745-85b4-12c1-8a0e-7af7e0b2a861",
-        "assigner": {
-          "reference": "TODO"
-        }
+        "value": "BodyTemperature_7b0e3745-85b4-12c1-8a0e-7af7e0b2a861"
       } ],
       "status": "final",
       "category": [ {
@@ -11608,10 +11458,7 @@
           } ]
         },
         "system": "https://fhir.imi.uni-luebeck.de/fhir",
-        "value": "BodyTemperature_79545829-cfb5-617a-b009-9559d3dd3914",
-        "assigner": {
-          "reference": "TODO"
-        }
+        "value": "BodyTemperature_79545829-cfb5-617a-b009-9559d3dd3914"
       } ],
       "status": "final",
       "category": [ {
@@ -11660,10 +11507,7 @@
           } ]
         },
         "system": "https://fhir.imi.uni-luebeck.de/fhir",
-        "value": "BodyTemperature_2b2f31aa-9d82-ffcc-fd35-bcaaa82a1239",
-        "assigner": {
-          "reference": "TODO"
-        }
+        "value": "BodyTemperature_2b2f31aa-9d82-ffcc-fd35-bcaaa82a1239"
       } ],
       "status": "final",
       "category": [ {
@@ -11712,10 +11556,7 @@
           } ]
         },
         "system": "https://fhir.imi.uni-luebeck.de/fhir",
-        "value": "BodyTemperature_db81eb0a-328f-ec54-8639-fd9256492bbf",
-        "assigner": {
-          "reference": "TODO"
-        }
+        "value": "BodyTemperature_db81eb0a-328f-ec54-8639-fd9256492bbf"
       } ],
       "status": "final",
       "category": [ {
@@ -11764,10 +11605,7 @@
           } ]
         },
         "system": "https://fhir.imi.uni-luebeck.de/fhir",
-        "value": "BodyTemperature_5dedb484-95e2-d5b6-690d-6bd5817baa29",
-        "assigner": {
-          "reference": "TODO"
-        }
+        "value": "BodyTemperature_5dedb484-95e2-d5b6-690d-6bd5817baa29"
       } ],
       "status": "final",
       "category": [ {
@@ -11816,10 +11654,7 @@
           } ]
         },
         "system": "https://fhir.imi.uni-luebeck.de/fhir",
-        "value": "BodyTemperature_92a10dc3-f810-a0ca-ff57-b4f60f9a47be",
-        "assigner": {
-          "reference": "TODO"
-        }
+        "value": "BodyTemperature_92a10dc3-f810-a0ca-ff57-b4f60f9a47be"
       } ],
       "status": "final",
       "category": [ {
@@ -11868,10 +11703,7 @@
           } ]
         },
         "system": "https://fhir.imi.uni-luebeck.de/fhir",
-        "value": "BodyTemperature_8d50415a-9852-b21e-86e9-5794224e5122",
-        "assigner": {
-          "reference": "TODO"
-        }
+        "value": "BodyTemperature_8d50415a-9852-b21e-86e9-5794224e5122"
       } ],
       "status": "final",
       "category": [ {
@@ -11920,10 +11752,7 @@
           } ]
         },
         "system": "https://fhir.imi.uni-luebeck.de/fhir",
-        "value": "OxygenSaturation_5b6cc487-8413-1adf-a2e1-6217434ecb41",
-        "assigner": {
-          "reference": "TODO"
-        }
+        "value": "OxygenSaturation_5b6cc487-8413-1adf-a2e1-6217434ecb41"
       } ],
       "status": "final",
       "category": [ {
@@ -11972,10 +11801,7 @@
           } ]
         },
         "system": "https://fhir.imi.uni-luebeck.de/fhir",
-        "value": "OxygenSaturation_6ac73773-903a-12b8-55a5-49c2bd7f2ab8",
-        "assigner": {
-          "reference": "TODO"
-        }
+        "value": "OxygenSaturation_6ac73773-903a-12b8-55a5-49c2bd7f2ab8"
       } ],
       "status": "final",
       "category": [ {
@@ -12024,10 +11850,7 @@
           } ]
         },
         "system": "https://fhir.imi.uni-luebeck.de/fhir",
-        "value": "OxygenSaturation_065513d0-1f8d-552b-4e91-04ba1b15f0da",
-        "assigner": {
-          "reference": "TODO"
-        }
+        "value": "OxygenSaturation_065513d0-1f8d-552b-4e91-04ba1b15f0da"
       } ],
       "status": "final",
       "category": [ {
@@ -12076,10 +11899,7 @@
           } ]
         },
         "system": "https://fhir.imi.uni-luebeck.de/fhir",
-        "value": "OxygenSaturation_17038e4d-6534-99c5-b7bb-461dc81d1446",
-        "assigner": {
-          "reference": "TODO"
-        }
+        "value": "OxygenSaturation_17038e4d-6534-99c5-b7bb-461dc81d1446"
       } ],
       "status": "final",
       "category": [ {
@@ -12128,10 +11948,7 @@
           } ]
         },
         "system": "https://fhir.imi.uni-luebeck.de/fhir",
-        "value": "OxygenSaturation_c2ac0bd1-2efa-ccd5-afe8-63bcb4e57022",
-        "assigner": {
-          "reference": "TODO"
-        }
+        "value": "OxygenSaturation_c2ac0bd1-2efa-ccd5-afe8-63bcb4e57022"
       } ],
       "status": "final",
       "category": [ {
@@ -12180,10 +11997,7 @@
           } ]
         },
         "system": "https://fhir.imi.uni-luebeck.de/fhir",
-        "value": "OxygenSaturation_5e36ba8d-c321-9bed-7857-b1e50e748272",
-        "assigner": {
-          "reference": "TODO"
-        }
+        "value": "OxygenSaturation_5e36ba8d-c321-9bed-7857-b1e50e748272"
       } ],
       "status": "final",
       "category": [ {
@@ -12232,10 +12046,7 @@
           } ]
         },
         "system": "https://fhir.imi.uni-luebeck.de/fhir",
-        "value": "OxygenSaturation_c0f248cc-354b-7cc8-8f83-af90695bd933",
-        "assigner": {
-          "reference": "TODO"
-        }
+        "value": "OxygenSaturation_c0f248cc-354b-7cc8-8f83-af90695bd933"
       } ],
       "status": "final",
       "category": [ {
@@ -12284,10 +12095,7 @@
           } ]
         },
         "system": "https://fhir.imi.uni-luebeck.de/fhir",
-        "value": "OxygenSaturation_d5b462ca-0f8b-91c6-4425-1af36ca2410e",
-        "assigner": {
-          "reference": "TODO"
-        }
+        "value": "OxygenSaturation_d5b462ca-0f8b-91c6-4425-1af36ca2410e"
       } ],
       "status": "final",
       "category": [ {
@@ -12336,10 +12144,7 @@
           } ]
         },
         "system": "https://fhir.imi.uni-luebeck.de/fhir",
-        "value": "OxygenSaturation_28b602cf-6225-6a8c-3381-e51610243b23",
-        "assigner": {
-          "reference": "TODO"
-        }
+        "value": "OxygenSaturation_28b602cf-6225-6a8c-3381-e51610243b23"
       } ],
       "status": "final",
       "category": [ {
@@ -12388,10 +12193,7 @@
           } ]
         },
         "system": "https://fhir.imi.uni-luebeck.de/fhir",
-        "value": "OxygenSaturation_b1c6bc81-8284-dcd5-badb-fd5963131364",
-        "assigner": {
-          "reference": "TODO"
-        }
+        "value": "OxygenSaturation_b1c6bc81-8284-dcd5-badb-fd5963131364"
       } ],
       "status": "final",
       "category": [ {
@@ -12440,10 +12242,7 @@
           } ]
         },
         "system": "https://fhir.imi.uni-luebeck.de/fhir",
-        "value": "OxygenSaturation_bbfa4573-41a1-7cba-2688-550e704aa19b",
-        "assigner": {
-          "reference": "TODO"
-        }
+        "value": "OxygenSaturation_bbfa4573-41a1-7cba-2688-550e704aa19b"
       } ],
       "status": "final",
       "category": [ {
@@ -12492,10 +12291,7 @@
           } ]
         },
         "system": "https://fhir.imi.uni-luebeck.de/fhir",
-        "value": "OxygenSaturation_7b73e828-280b-8d48-044d-a90841a8d303",
-        "assigner": {
-          "reference": "TODO"
-        }
+        "value": "OxygenSaturation_7b73e828-280b-8d48-044d-a90841a8d303"
       } ],
       "status": "final",
       "category": [ {
@@ -12544,10 +12340,7 @@
           } ]
         },
         "system": "https://fhir.imi.uni-luebeck.de/fhir",
-        "value": "OxygenSaturation_7581e5e7-beed-d2af-239d-b3af1fbf15ad",
-        "assigner": {
-          "reference": "TODO"
-        }
+        "value": "OxygenSaturation_7581e5e7-beed-d2af-239d-b3af1fbf15ad"
       } ],
       "status": "final",
       "category": [ {
@@ -12596,10 +12389,7 @@
           } ]
         },
         "system": "https://fhir.imi.uni-luebeck.de/fhir",
-        "value": "OxygenSaturation_a7216f68-45c7-3ce3-25e1-b3adf8a6c5d4",
-        "assigner": {
-          "reference": "TODO"
-        }
+        "value": "OxygenSaturation_a7216f68-45c7-3ce3-25e1-b3adf8a6c5d4"
       } ],
       "status": "final",
       "category": [ {
