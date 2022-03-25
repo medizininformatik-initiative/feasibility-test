@@ -11,7 +11,7 @@ mapped_term_codes = []
 scriptDir = os.path.dirname(os.path.realpath(__file__))
 testCasesDir = os.path.join(scriptDir, "testCases")
 
-with open(os.path.join(scriptDir, "codex-term-code-mapping.json")) as mapping_file:
+with open(os.path.join(scriptDir, "feasibility-term-code-mapping.json")) as mapping_file:
     mapping_json = json.load(mapping_file)
     for mapping in mapping_json:
         mapped_term_codes.append(TermCode(**mapping['key']))
