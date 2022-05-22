@@ -1,6 +1,6 @@
 ## execute_generator
 
-Pulls respective applicationj from GitHub, generates JAR file and runs is using the following arguments:
+Pulls respective application from GitHub, generates JAR file and runs is using the following arguments:
 
 ### Arguments:
 
@@ -19,7 +19,8 @@ Defaults to 20
 
 ## run_test_queries:
 
-Runs benchmark on a NUM node by running an assortement of queries against it. Note that one can add additional queries by adding them into the folders inside the *queries* directory
+Runs benchmark on a NUM node by running an assortement of queries against it. Note that one can add additional queries by putting them into the folders inside the *queries* directory.
+The script runs each individual query multiple times and calculates the average time.
 
 ### Arguments:
 
