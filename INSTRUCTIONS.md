@@ -13,6 +13,16 @@ Analyses FHIR instance data on a given FHIR Repository
 
 ### Arguments:
 
-- **String**: URL of FHIR Server on which data should be analyzed
+- **String**: URL of FHIR server on which data should be analyzed
 - **int**: page size of FHIR Search requests. In case of large data volumes setting it to a high value is advisable.
 Defaults to 20
+
+## run_test_queries:
+
+Runs benchmark on a NUM node by running an assortement of queries against it. Note that one can add additional queries by adding them into the folders inside the *queries* directory
+
+### Arguments:
+
+- **String**: URL of the FHIR server (which is part of the NUM node) on which the benchmark shall be performed. (*Default*: *http://locahost/api/v1/query-handler*)
+- **String**: User name of the user trying to access the node
+- **String**: Password of the user trying to access the node
