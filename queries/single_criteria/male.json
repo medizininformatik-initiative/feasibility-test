@@ -1,0 +1,34 @@
+{
+  "version": "http://to_be_decided.com/draft-1/schema#",
+  "display": "",
+  "inclusionCriteria": [
+    [
+      {
+        "termCodes": [
+          {
+            "code": "gender",
+            "system": "mii.abide",
+            "display": "Geschlecht"
+          }
+        ],
+        "attributeFilters": [
+          {
+            "selectedConcepts": [
+              {
+                "code": "male",
+                "system": "http://hl7.org/fhir/administrative-gender",
+                "display": "Male"
+              }
+            ],
+            "type": "concept",
+            "attributeCode": {
+              "code": "gender",
+              "system": "mii.abide",
+              "display": "Geschlecht"
+            }
+          }
+        ]
+      }
+    ]
+  ]
+}
