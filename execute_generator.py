@@ -48,6 +48,6 @@ if __name__ == '__main__':
         run_syntheagecco(jar_name='syntheagecco-all.jar')
     else:
         path = os.path.join(os.getcwd(), 'syntheakds')
-        pull(url='https://github.com/paulolaup/syntheakds.git', branch='main', path=path,
+        pull(url='https://github.com/itcr-uni-luebeck/Synthea-MII-KDS.git', branch='main', path=path,
              jar_name='syntheakds-all.jar')
         run_syntheakds(jar_name='syntheakds-all.jar')
