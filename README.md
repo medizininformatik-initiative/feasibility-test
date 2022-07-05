@@ -12,10 +12,22 @@ Pulls respective application from GitHub, generates JAR file and runs is using t
 Analyses FHIR instance data on a given FHIR Repository
 
 ### Arguments:
+- **Note**: All positional and optional arguments can be viewed with description using the *-h* option
 
-- **String**: URL of FHIR server on which data should be analyzed
-- **int**: page size of FHIR Search requests. In case of large data volumes setting it to a high value is advisable.
-Defaults to 20
+**Positional arguments:**
+
+| Name | Type | Description |
+| :---: | :---: | :---: |
+| url | String | URL of the server to which requests are sent |
+
+**Optional arguments:**
+
+| Short | Long | Arguments | Description |
+| :---: | :---: | :---: | :---: |
+| -h | --help |  | See **Note** |
+| -c | --count | <count: *int*> | Number of returned resources per request (default: 100)|
+| -a | --authentication | <user: *string*> <password: *string*> | User name and password for basic auth if required |
+| -i | --ignore-certificates |  | If provided, all certificates are ignored when connecting with the server. **Only use this if you know that it is safe!** |
 
 ## run_test_queries:
 
